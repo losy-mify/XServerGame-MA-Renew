@@ -1,6 +1,8 @@
 name: XSGA-Renew
 on:
   workflow_dispatch:
+  schedule:
+      - cron: "0 */20 * * *"
 
 jobs:
   renew:
